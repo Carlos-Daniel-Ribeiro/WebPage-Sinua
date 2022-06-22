@@ -4,7 +4,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: rgb(255, 0, 0);
 }
 .background {
     background-color: blueviolet;
@@ -104,4 +104,36 @@ header nav ul li a:hover  {
 .banner-right figure img {
     height: 600px;
     width: auto;
+}
+.about-us {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(350px, auto);
+    width: 100%;
+}
+.descr_about {
+    height: 350px;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.img1 {
+    background-image: url("/Portifólio/HTML_CSS_JS/WebPage-Sinua/image/istockphoto-1347724646-612x612.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.img2 {
+    height: 350px;
+    background-color: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
