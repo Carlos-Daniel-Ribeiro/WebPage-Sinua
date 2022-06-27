@@ -6,30 +6,26 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Raleway', sans-serif;
-
-}
-.background {
-    background: linear-gradient(45deg, rgb(50, 0, 50), rgb(0, 60, 60));
+    background: linear-gradient(45deg, rgb(100, 0, 100), rgb(0, 60, 60));
 }
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 100px;
     width: 1300px;
     max-width: 100%;
     margin: auto;
 }
-header figure {
+header .logo {
     height: 90px;
     width: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-left: 10px;
     margin-right: 10px;
 }
-header figure img {
-    height: 90px;
+header .logo img {
+    height: 85px;
 }
 header nav {
     display: flex;
@@ -92,10 +88,6 @@ header nav ul li a:hover  {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
 }
-.banner-left iframe {
-    height: 230px;
-    width: 420px;
-}
 .banner-right {
     flex: 1;
     display: flex;
@@ -103,7 +95,7 @@ header nav ul li a:hover  {
     align-items: flex-end;
     justify-content: flex-end;
 }
-.banner-right figure img {
+.banner-right  img {
     height: 600px;
     width: auto;
 }
@@ -135,7 +127,7 @@ header nav ul li a:hover  {
     font-size: 17px;
     width: 350px;
 }
-.img1 {
+.picture {
     background-image: url("/Portifólio/HTML_CSS_JS/WebPage-Sinua/image/john-williams-guitar-player-mal-bray.jpg");
     background-size: cover;
     background-position: center;
@@ -145,7 +137,7 @@ header nav ul li a:hover  {
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.img2 {
+.block {
     height: auto;
     background: linear-gradient(45deg, rgba(255, 0, 255, 0.200), rgba(255, 65, 65, 0.350));
     grid-column-start: 1;
@@ -153,7 +145,7 @@ header nav ul li a:hover  {
     grid-row-start: 2;
     grid-row-end: 3;
 }
-.instruments {
+.method {
     overflow-y: hidden;
     display: flex;
     height: 100vh;
@@ -166,13 +158,19 @@ header nav ul li a:hover  {
     justify-content: space-between;
     height: 100%;
 }
-.image_instruments img {
+.image_instruments div img {
     object-fit: cover;
     object-position: center;
     height: 100%;
-    width: 250px;
+    width: 100%;
 }
-.descr_instruments {
+.image_instruments div:first-child {
+    padding-right: 7px;
+}
+.image_instruments div:last-child {
+    padding-left: 7px;
+}
+.descr_methods {
     background: -webkit-linear-gradient(left, brown 0%, rgb(185, 185, 130) 100%);
     background: linear-gradient(left, brown 0%, rgb(185, 185, 130) 100%);
     -webkit-background-clip: text;
@@ -186,17 +184,17 @@ header nav ul li a:hover  {
     height: auto;
     position: relative;
 }
-.descr_instruments .d2 {
+.descr_methods .d2 {
     display: none;
 }
-.descr_instruments .d3 {
+.descr_methods .d3 {
     display: none;
 }
-.descr_instruments h3 {
+.descr_methods h3 {
     font-size: 40px;
     font-weight: 700;
 }
-.descr_instruments p {
+.descr_methods p {
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
