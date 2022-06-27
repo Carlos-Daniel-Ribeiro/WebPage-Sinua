@@ -186,6 +186,12 @@ header nav ul li a:hover  {
     height: auto;
     position: relative;
 }
+.descr_instruments .d2 {
+    display: none;
+}
+.descr_instruments .d3 {
+    display: none;
+}
 .descr_instruments h3 {
     font-size: 40px;
     font-weight: 700;
@@ -205,15 +211,18 @@ header nav ul li a:hover  {
     margin-bottom: 100px;
 }
 .buttons button {
-    background-color: rgba(165, 40, 40, 0.50);
+    background-color: rgba(165, 40, 40, 0.30);
     height: 25px;
     width: 25px;
-    border: 2px solid rgb(185, 185, 130);
+    border: 2px solid rgb(185, 185, 130, 0.30);
     border-radius: 15px;
     margin-right: 10px;
     margin-left: 10px;
     cursor: pointer;
 }
 .buttons button:hover {
-    background-color: brown;
+    background-color: rgba(165, 40, 40, 0.650);
+}
+.buttons .active {
+    background-color: rgba(165, 40, 40, 0.650);
 }
