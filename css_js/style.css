@@ -5,7 +5,7 @@
     padding: 0px;
 }
 body {
-    background: linear-gradient(45deg, rgb(100, 0, 100), rgb(0, 60, 60));
+    background: linear-gradient(45deg, rgb(90, 5, 125), rgb(65, 0, 70), rgb(0, 80, 80));
 }
 header {
     display: flex;
@@ -226,7 +226,7 @@ header nav ul li a:hover  {
     background-color: rgba(165, 40, 40, 0.650);
 }
 .theachers {
-    height: 50vh;
+    height: 550px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -236,14 +236,13 @@ header nav ul li a:hover  {
     margin: auto;
 }
 .theachers h2 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
     background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    padding-top: 50px;
 }
 .block_theachers {
     max-width: 1300px;
@@ -257,13 +256,13 @@ header nav ul li a:hover  {
 .theacher {
     border: 1px solid transparent;
     border-radius: 10px;
-    height: 270px;
+    height: 350px;
     width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, rgba(255, 0, 255, 0.200), rgba(255, 65, 65, 0.350));
+    background: linear-gradient(45deg, rgba(85, 5, 85, 0.3), rgba(255, 80, 80, 0.35));
 }
 .theacher h4 {
     color: rgba(255, 255, 255, 0.600);
@@ -333,7 +332,7 @@ header nav ul li a:hover  {
     background-color: rgba(165, 40, 40, 0.650);
 }
 .price {
-    height: 50vh;
+    height: 550px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -343,14 +342,13 @@ header nav ul li a:hover  {
     margin: auto;
 }
 .price h2 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 700;
     background: -webkit-linear-gradient(left, brown 0%, rgb(185, 185, 130) 100%);
     background: linear-gradient(left, brown 0%, rgb(185, 185, 130) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    padding-top: 50px;
 }
 .block_prices {
     max-width: 1300px;
@@ -364,20 +362,18 @@ header nav ul li a:hover  {
 .prices {
     border: 1px solid transparent;
     border-radius: 10px;
-    height: 290px;
+    height: 350px;
     width: 250px;
     display: flex;
     flex-direction: column;
-    
     align-items: center;
-    background-color: black;
     box-shadow: 0 0 0.5em brown;
 }
 .prices h4 {
     color: rgb(185, 185, 130);
     font-size: 23px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .prices h5 {
     color: rgb(185, 185, 130);
@@ -390,7 +386,7 @@ header nav ul li a:hover  {
     font-size: 17px;
     margin: 0px;
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 .prices p {
     color: rgba(220, 55, 55, 0.650);
@@ -423,3 +419,97 @@ header nav ul li a:hover  {
 .buttons3-1 .active {
     background-color: rgba(165, 40, 40, 0.650);
 }
+footer {
+    background: linear-gradient(45deg, rgb(100, 0, 100), rgb(0, 60, 60));
+}
+.info {
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.git, .linkedin, .instagram
+, .facebook, .twitter {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.git a, .linkedin a, .instagram a
+, .facebook a, .twitter a {
+    text-decoration: none;
+    font-size: 75px;
+    background: -webkit-linear-gradient(left, purple 0%, aquamarine 100% );
+    background: linear-gradient(left, purple 0%, aquamarine 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+}
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+.copyright p {
+    color: rgba(255, 255, 255, 0.301);
+}
+/*
+.block-form {
+    height: 12.5vh;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.block-form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.block-form h2 {
+    background: -webkit-linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
+    background: linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    font-size: 25px;
+    font-weight: 700;
+    width: 500px;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+}
+.block-form button {
+    cursor: pointer;
+    background: -webkit-linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
+    background: linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    height: 50px;
+    width: 150px;
+    font-size: 40px;
+    font-weight: 700;
+    border: 3px solid purple;
+    border-radius: 50px;
+    box-shadow: 0 0 0.5em purple;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+}
+.block-form button:hover {
+    background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(220, 105, 220) 100%);
+    background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(220, 105, 220) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    height: 60px;
+    width: 170px;
+    font-size: 45px;
+    font-weight: 800;
+    border: 3px solid rgb(255, 0, 255);
+    box-shadow: 0 0 0.5em rgb(255, 0, 255);
+    transition: all ease 0.3s;
+}
+*/
