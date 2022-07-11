@@ -100,36 +100,6 @@ header nav ul li .active {
     -webkit-text-fill-color: transparent ;
     margin-bottom: 20px;
 }
-.banner-left button {
-    position: absolute;
-    bottom: 0;
-    cursor: pointer;
-    background: -webkit-linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
-    background: linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent ;
-    height: 40px;
-    width: 120px;
-    font-size: 20px;
-    font-weight: 500;
-    border: 1px solid purple;
-    border-radius: 20px;
-    text-transform: uppercase;
-    transition: all ease 0.3s;
-}
-.banner-left button:hover {
-    background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(220, 105, 220) 100%);
-    background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(220, 105, 220) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent ;
-    height: 45px;
-    width: 130px;
-    font-size: 23px;
-    font-weight: 600;
-    border: 1px solid rgb(255, 0, 255);
-    box-shadow: 0 0 0.3em rgb(255, 0, 255);
-    transition: all ease 0.3s;
-}
 .banner-right {
     flex: 1;
     display: flex;
@@ -178,6 +148,7 @@ header nav ul li .active {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    transition: all ease 0.5s;
 }
 .block {
     height: auto;
@@ -225,22 +196,27 @@ header nav ul li .active {
     align-items: center;
     height: auto;
     position: relative;
+    transition: all ease 0.5s;
 }
 .descr_methods .d2 {
     display: none;
+    transition: all ease 0.5s;
 }
 .descr_methods .d3 {
     display: none;
+    transition: all ease 0.5s;
 }
 .descr_methods h3 {
     font-size: 40px;
     font-weight: 700;
+    transition: all ease 0.5s;
 }
 .descr_methods p {
     font-weight: 500;
     font-size: 17px;
     line-height: 20px;
     width: 350px;
+    transition: all ease 0.5s;
 }
 .buttons {
     display: flex;
@@ -378,7 +354,7 @@ header nav ul li .active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background: linear-gradient(45deg, rgb(40, 0, 50), rgb(65, 0, 70), rgb(0, 80, 80));
     margin: auto;
 }
 .price h2 {
@@ -439,15 +415,10 @@ header nav ul li .active {
     border: 2px solid brown ;
     border-radius: 20px;
     text-transform: uppercase;
-    transition: all ease 0.3s;
 }
 .prices button:hover {
-    height: 65px;
-    width: 140px;
-    font-size: 23px;
-    font-weight: 600;
-    border:4px solid brown;
-    transition: all ease 0.3s;
+    font-weight: 700;
+    border:3px solid brown;
     color: rgb(255, 70, 70);
 }
 .buttons3-1 {
@@ -475,13 +446,15 @@ header nav ul li .active {
     background-color: rgba(165, 40, 40, 0.650);
 }
 footer {
-    background: linear-gradient(45deg, rgb(100, 0, 100), rgb(0, 60, 60));
+    background-color: black;
 }
 .info {
     height: 12vh;
+    width: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: auto;
 }
 .git, .linkedin, .instagram
 , .facebook, .twitter {
@@ -494,9 +467,17 @@ footer {
 .git a, .linkedin a, .instagram a
 , .facebook a, .twitter a {
     text-decoration: none;
-    font-size: 75px;
+    font-size: 35px;
     background: -webkit-linear-gradient(left, purple 0%, aquamarine 100% );
     background: linear-gradient(left, purple 0%, aquamarine 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+}
+.git a:hover, .linkedin a:hover, .instagram a:hover
+, .facebook a:hover, .twitter a:hover {
+    text-decoration: none;
+    background: -webkit-linear-gradient(left, rgb(190, 0, 190) 0%, rgb(50, 220, 165) 100% );
+    background: linear-gradient(left, rgb(190, 0, 190), rgb(50, 220, 165));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
 }
@@ -512,59 +493,20 @@ footer {
 .copyright p {
     color: rgba(255, 255, 255, 0.301);
 }
-/*
-.block-form {
-    height: 12.5vh;
-    width: 100%;
-    max-width: 1300px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.block-form div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-.block-form h2 {
-    background: -webkit-linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
-    background: linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent ;
-    font-size: 25px;
-    font-weight: 700;
-    width: 500px;
-    font-family: 'Great Vibes', cursive;
-    text-align: center;
-}
-.block-form button {
+.scroll {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 999;
     cursor: pointer;
-    background: -webkit-linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
-    background: linear-gradient(left, rgb(100, 25, 110) 0%, rgb(220, 105, 220) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent ;
-    height: 50px;
-    width: 150px;
-    font-size: 40px;
-    font-weight: 700;
-    border: 3px solid purple;
-    border-radius: 50px;
-    box-shadow: 0 0 0.5em purple;
-    text-transform: uppercase;
-    transition: all ease 0.3s;
-}
-.block-form button:hover {
-    background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(220, 105, 220) 100%);
-    background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(220, 105, 220) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent ;
     height: 60px;
-    width: 170px;
-    font-size: 45px;
-    font-weight: 800;
-    border: 3px solid rgb(255, 0, 255);
-    box-shadow: 0 0 0.5em rgb(255, 0, 255);
-    transition: all ease 0.3s;
+    width: 60px;
 }
-*/
+.scroll img {
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+}
