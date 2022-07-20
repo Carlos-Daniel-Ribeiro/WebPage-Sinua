@@ -217,6 +217,7 @@ header nav ul li .active {
     width: 100%;
 }
 .descr_about {
+    display: block;
     background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
     background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
     -webkit-background-clip: text;
@@ -239,7 +240,6 @@ header nav ul li .active {
     width: 350px;
 }
 .picture {
-    background-image: url("../image/john-williams-guitar-player-mal-bray.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -248,8 +248,51 @@ header nav ul li .active {
     grid-row-start: 1;
     grid-row-end: 3;
     transition: all ease 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease 2s;
+}
+.picture.img1 {
+    background-image: url("../image/john-williams-guitar-player-mal-bray.jpg");
+}
+.picture.img2 {
+    background-image: url("../image/11photo-1647770182535-e44644b12227fd.jpg");
+}
+.picture.img3 {
+    background-image: url("../image/photo-1647770182535-e44644b127fd.jpg");
+}
+.picture .descr_about2  {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.900);
+    text-align: center;
+    margin: auto;
+    height: auto;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 30px;
+}
+.picture .descr_about2 h3 {
+    background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
+    background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    font-size: 30px;
+    font-weight: 700;
+}
+.picture .descr_about2 p {
+    background: -webkit-linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
+    background: linear-gradient(left, rgb(255, 0, 255) 0%, rgb(255, 65, 65) 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    font-weight: 500;
+    font-size: 15px;
+    width: 350px;
 }
 .block {
+    display: block;
     height: auto;
     background: linear-gradient(45deg, rgba(255, 0, 255, 0.200), rgba(255, 65, 65, 0.350));
     grid-column-start: 1;
@@ -662,6 +705,18 @@ footer {
         display: flex;
         font-size: 40px;
     } 
+    .descr_about {
+        display: none;
+    }
+    .picture .descr_about2 {
+        display: block;
+    }
+    .block {
+        display: none;
+    }
+    .picture {
+        grid-column-start: 1;
+    }
 }
 @media (min-width:250px) and (max-width:600px) {
     .banner-left h1 {
@@ -704,6 +759,26 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .descr_about {
+        display: none;
+    }
+    .picture .descr_about2 {
+        display: block;
+    }
+    .block {
+        display: none;
+    }
+    .picture {
+        grid-column-start: 1;
+    }
+    .picture .descr_about2 h3 {
+        font-size: 25px;
+    }
+    .picture .descr_about2 p {
+        font-weight: 500;
+        font-size: 14px;
+        width: 200px;
     }
 }
 @media (min-width:851px) {

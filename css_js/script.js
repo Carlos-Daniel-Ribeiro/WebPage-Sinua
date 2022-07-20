@@ -33,3 +33,18 @@ function menuTouch2() {
     let menuContent = document.getElementById("menu_content");
     menuContent.style.display = "none"
 }
+
+function trocarImg() {
+    let picture = document.getElementById("picture");
+    if ( picture.classList.contains("img1")) {
+        picture.classList.remove("img1")
+        picture.classList.add("img2")
+    } else if (picture.classList.contains("img2")) {
+        picture.classList.remove("img2")
+        picture.classList.add("img3")
+    } else {
+        picture.classList.remove("img3")
+        picture.classList.add("img1")
+    }
+}
+setInterval(trocarImg,7000);
