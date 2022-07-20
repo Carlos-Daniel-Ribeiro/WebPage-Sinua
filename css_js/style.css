@@ -41,6 +41,18 @@ header .menu-bar {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
 }
+header .menu-bar2 {
+    display: none;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 30px 0px;
+    margin-right: 50px;
+    transition: all ease 0.2s;
+    background: -webkit-linear-gradient(left, rgba(190, 0, 190, 0) 0%, rgba(50, 220, 166, 0) 100% );
+    background: linear-gradient(left, rgba(190, 0, 190, 0), rgba(50, 220, 166, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+}
 header nav {
     display: flex;
     justify-content: center;
@@ -75,7 +87,7 @@ header nav ul li .active {
     text-decoration: none;
     font-size: 15px;
 }
-.nav_res {
+#nav_res {
     width: 0px;
     height: 100vh;
     position: absolute;
@@ -89,7 +101,7 @@ header nav ul li .active {
     background: linear-gradient(45deg, rgba(60, 5, 70, 0.800), rgb(40, 0, 60,0.800), rgb(0, 60, 60,0.800));
     transition: all ease 0.2s;
 }
-.nav_res i {
+#nav_res #menu-bar2 {
     display: none;
     font-size: 30px;
     padding: 30px 0px;
@@ -97,7 +109,7 @@ header nav ul li .active {
     transition: all ease 0.2s;
     cursor: pointer;
 }
-.nav_res ul {
+#nav_res #menu_content {
     display: none;
     flex-direction: column;
     color: black;
@@ -105,7 +117,7 @@ header nav ul li .active {
     height: 100%;
     transition: all ease 0.2s;
 }
-.nav_res ul li {
+#nav_res ul li {
     list-style-type: none;
     width: 100%;
     height: 70px;
@@ -115,10 +127,10 @@ header nav ul li .active {
     border-bottom: 1px solid rgba(255, 255, 255, 0.075);
     transition: all ease 0.2s;
 }
-.nav_res ul li:first-child {
+#nav_res ul li:first-child {
     border-top: 1px solid rgba(255, 255, 255, 0.075) ;
 }
-.nav_res ul li a {
+#nav_res ul li a {
     text-decoration: none;
     display:flex;
     height: 100%;
@@ -131,7 +143,7 @@ header nav ul li .active {
     color: rgba(240, 250, 255, 0.700);
     transition: all ease 0.7s;
 }
-.nav_res ul li a:hover {
+#nav_res ul li a:hover {
     color: rgba(240, 250, 255);
     border: 3px solid rgba(255, 255, 255, 0.075);
     border-right: none;
@@ -646,7 +658,7 @@ footer {
     header nav {
         display: none;
     }
-    header .menu-bar {
+    header #menu-bar {
         display: flex;
         font-size: 40px;
     } 
@@ -681,7 +693,7 @@ footer {
     header nav {
         display: none;
     }
-    header .menu-bar {
+    header #menu-bar {
         display: flex;
         font-size: 35px;
     }
@@ -694,4 +706,8 @@ footer {
         align-items: center;
     }
 }
-
+@media (min-width:851px) {
+    #nav_res {
+        display: none;
+    }
+}
