@@ -257,7 +257,7 @@ header nav ul li .active {
     background-image: url("../image/john-williams-guitar-player-mal-bray.jpg");
 }
 .picture.img2 {
-    background-image: url("../image/11photo-1647770182535-e44644b12227fd.jpg");
+    background-image: url("../image/photo-1470225620780-dba8ba36b745.jpg");
 }
 .picture.img3 {
     background-image: url("../image/photo-1647770182535-e44644b127fd.jpg");
@@ -444,6 +444,7 @@ header nav ul li .active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px 5px;
 }
 .theachers .t1 h4, .theachers .t2 h4, .theachers .t3 h4, .theachers .t4 h4 {
     color: rgba(255, 255, 255, 0.600);
@@ -465,7 +466,7 @@ header nav ul li .active {
     border-radius: 5px;
 }
 .buttons2-1 {
-    display: block;
+    display: none;
     position: absolute;
     height: 30px;
     width: auto;
@@ -561,7 +562,7 @@ header nav ul li .active {
     color: rgb(255, 70, 70);
 }
 .buttons3-1 {
-    display: flex;
+    display: none;
     position: absolute;
     z-index: 99;
     left: 50;
@@ -650,7 +651,6 @@ footer {
     object-position: center;
 }
 
-
 /* RESPONSIVIDADE */
 
 @media (min-width:850px) and (max-width:1150px) {
@@ -672,7 +672,21 @@ footer {
         justify-content: space-between;
         height: 100%;
     }
-    
+    .theachers .t1, .theachers .t2, .theachers .t3, .theachers .t4 {
+        width: 200px;
+    }
+    .theachers .t1 img, .theachers .t2 img, .theachers .t3 img, .theachers .t4 img {
+        width: 155px;
+    }
+    .theachers .t1 h5, .theachers .t2 h5, .theachers .t3 h5, .theachers .t4 h5 {
+        font-size: 12px;
+    }
+    .theachers .t1 h4, .theachers .t2 h4, .theachers .t3 h4, .theachers .t4 h4 {
+        font-size: 21px;
+    }
+    .block_prices .p1, .price .p2, .price .p3 {
+        width: 230px;
+    }
 }
 
 @media (min-width:600px) and (max-width:850px) {
@@ -720,7 +734,25 @@ footer {
     .picture {
         grid-column-start: 1;
     }
+    .descr_methods h3 {
+        font-size: 30px;
+    }
+    .descr_methods p {
+        font-size: 15px;
+        line-height: 17px;
+        width: 270px;
+    }
+    .theachers .t2, .theachers .t4 {
+        display: none;
+    }
+    .buttons2-1 {
+        display: block;
+    }
+    .block_prices .p1, .price .p2, .price .p3 {
+        width: 170px;
+    }
 }
+
 @media (min-width:250px) and (max-width:600px) {
     .banner-left h1 {
         max-width: 350px;
@@ -783,9 +815,83 @@ footer {
         font-size: 14px;
         width: 200px;
     }
+    .descr_methods h3 {
+        font-size: 25px;
+    }
+    .descr_methods p {
+        font-size: 13px;
+        line-height: 15px;
+        width: 200px;
+    }
+    .image_instruments div img {
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: 95%;
+    }
+    .image_instruments div:first-child {
+        padding-right: 0px;
+        display: none;
+    }
+    .image_instruments div:last-child {
+        display: none;
+        padding-left: 0px;
+    }
+    .theachers .t2, .theachers .t4 {
+        display: none;
+    }
+    .theachers .t1, .theachers .t2, .theachers .t3, .theachers .t4 {
+        width: 120px;
+    }
+    .theachers .t1 img, .theachers .t2 img, .theachers .t3 img, .theachers .t4 img {
+        width: 110px;
+        height: 250px;
+    }
+    .theachers .t1 h5, .theachers .t2 h5, .theachers .t3 h5, .theachers .t4 h5 {
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+    .theachers .t1 h4, .theachers .t2 h4, .theachers .t3 h4, .theachers .t4 h4 {
+        font-size: 15px;
+    }
+    .buttons2-1 {
+        display: block;
+    }
+    .block_prices .p1, .price .p2, .price .p3 {
+        width: 220px;
+    }
+    .price .p2, .price .p3 {
+        display: none;
+    }
+    .buttons3-1 {
+        display: flex;
+    }
+    .price h2 {
+        font-size: 30px;
+    }
+    .info {
+        width: 250px;
+    }
+    .git a, .linkedin a, .instagram a
+    , .facebook a, .twitter a {
+    font-size: 30px;
+    }
+    .copyright p {
+        text-align: center;
+        width: 250px;
+    }
 }
+
 @media (min-width:851px) {
     #nav_res {
         display: none;
+    }
+    .theachers .t1, .theachers .t2, .theachers .t3, .theachers .t4 {
+        display: flex !important;
+    }
+}
+@media (min-width:601px) {
+    .block_prices .p1, .price .p2, .price .p3 {
+        display: flex !important;
     }
 }
