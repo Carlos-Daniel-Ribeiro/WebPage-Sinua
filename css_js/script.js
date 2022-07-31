@@ -20,11 +20,7 @@ function menuTouch() {
     let menuContent = document.getElementById("menu_content");
     menuContent.style.display = "block"
     let body = document.querySelector("body");
-    if (body.style.overflow == "auto") {
-        body.style.overflow = "hidden";
-    } else {
-        body.style.overflow = "auto";
-    }
+    body.style.overflow = "hidden"
 }
 function menuTouch2() {
     let menuBar = document.getElementById("menu-bar");
