@@ -8,6 +8,7 @@
 body {
     background: linear-gradient(45deg, rgb(90, 5, 125), rgb(65, 0, 70), rgb(0, 80, 80));
     position: relative;
+    overflow: auto;
 }
 header {
     display: flex;
@@ -888,6 +889,9 @@ footer {
     }
     .theachers .t1, .theachers .t2, .theachers .t3, .theachers .t4 {
         display: flex !important;
+    }
+    body { 
+        overflow: auto !important;
     }
 }
 @media (min-width:601px) {

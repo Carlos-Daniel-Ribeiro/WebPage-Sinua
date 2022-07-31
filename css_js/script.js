@@ -19,6 +19,12 @@ function menuTouch() {
     menuBar2.style.display = "block"
     let menuContent = document.getElementById("menu_content");
     menuContent.style.display = "block"
+    let body = document.querySelector("body");
+    if (body.style.overflow == "auto") {
+        body.style.overflow = "hidden";
+    } else {
+        body.style.overflow = "auto";
+    }
 }
 function menuTouch2() {
     let menuBar = document.getElementById("menu-bar");
@@ -30,6 +36,9 @@ function menuTouch2() {
     menuBar2.style.display = "none"
     let menuContent = document.getElementById("menu_content");
     menuContent.style.display = "none"
+    let body = document.querySelector("body");
+    body.style.overflow = "auto";
+
 }
 function trocarImg() {
     let picture = document.getElementById("picture");
